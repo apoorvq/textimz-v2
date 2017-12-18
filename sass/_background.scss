@@ -1,0 +1,160 @@
+/*Background*/
+.default-theme {
+	background: url(../img/default-theme-bg.jpg) 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+	.arvada-wrap-home,
+	.arvada-under {
+	  .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .5);
+		}
+	}
+	.arvada-wrap-about {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+	.arvada-wrap-contact {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+}
+.slider-theme {
+	z-index: 9999;
+  	position: absolute;
+	.bg-box {
+	  background-position: top center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 100%;
+	  left: 0;
+	  overflow: hidden;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	  z-index: -1;
+		.rslides {
+		  height: 100%;
+		  list-style: none;
+		  margin: 0;
+		  overflow: hidden;
+		  padding: 0;
+		  position: relative;
+		  width: 100%;
+		  z-index: 1;
+		  li {
+		    -webkit-backface-visibility: hidden;
+		    background-size: cover!important;
+		    display: none;
+		    height: 100%;
+		    left: 0;
+		    padding-left: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    &:first-child {
+		      display: block;
+		      float: left;
+		      position: relative;
+		    }
+		  }
+		  img {
+		    border: 0;
+		    display: block;
+		    float: left;
+		    height: auto;
+		    width: 100%;
+		  }
+		}
+	}
+	.arvada-wrap-about {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+	.arvada-wrap-home {
+	  .arvada-scroll-overlay {
+	  	background: rgba(60, 69, 93, .5);
+	  }
+	}
+	.arvada-wrap-contact {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+}
+
+.image-gradient-theme {
+	background: url(../img/app-theme-bg.jpg) 50% 50%;
+	@include background-size(cover);
+	.arvada-scroll-overlay {
+		background-color: rgba(76, 217, 100, .5); // Old browsers
+		@include filter-gradient(rgba(76, 217, 100, .5), rgba(75, 172, 255, .5), vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(76, 217, 100, .5) 0%,rgba(75, 172, 255, .5) 100%));
+	}
+}
+
+.color-theme {
+	background: #7cc2b4;
+}
+
+.parallax-theme {
+	.arvada-wrap-home {
+	  .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .5);
+		}
+	}
+	.arvada-wrap-about {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+	.arvada-wrap-contact {
+    .arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+  .parallax-wallpaper {
+	   background: url(../img/parallax-bg.jpg);
+	  left: -25%;
+	  -webkit-background-size: cover;
+	  background-size: cover;
+	  height: 150%;
+	  margin: 0;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  top: -25%;
+	  width: 150%;
+	  z-index: -1;
+	}
+}
+.bg-video {
+	background:url(../img/video-bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+  video {
+	  min-width: 100%;
+	  min-height: 100%;
+  }
+	.arvada-wrap-home {
+		.arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .5);
+		}
+
+	}
+	.arvada-wrap-about {
+		.arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}
+	}
+	.arvada-wrap-contact {
+		.arvada-scroll-overlay {
+			background: rgba(60, 69, 93, .8);
+		}	
+	}
+}
+	.page-current {
+		z-index: 9;
+	}
